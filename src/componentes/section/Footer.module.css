@@ -1,0 +1,22 @@
+.footer{
+    display: grid;
+    justify-content:center
+
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+}
+.footer li{
+    margin: 25px;
+}
+.footer a{
+    color: white !important;
+}
+.footer p{
+    margin: 25px;
+    font-size: 18px;
+}
