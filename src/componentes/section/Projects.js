@@ -22,10 +22,10 @@ function Projects() {
                 description='Projeto feito para exercitar o uso de bibliotecas e consumo de APIs, no caso 
                 foi utilizado o bootstrap para construção do front-end, e usadas duas APIs pra buscar o cep e a previsão.'
                 repo='https://github.com/GabrielD1996/Desafio-2-Dnc' />
-            <Cards img={portifolio} site='' title='Portifolio G.Domingues' tech='REACT,HTML,CSS,JS'
+            <Cards img={portifolio} site='https://portifolio-steel-nine.vercel.app' title='Portifolio G.Domingues' tech='REACT,HTML,CSS,JS'
                 description='Pagina construida para compreensão do uso do REACT, usando a montagem de componentes que deixam a construção 
                 da pagina muito mais agil alem de facilitar adição de novos conteudos.'
-                repo='' />
+                repo='https://github.com/GabrielD1996/portifolio' />
            
         </div>
 
