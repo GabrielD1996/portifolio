@@ -1,13 +1,26 @@
 import Styles from './Cards.module.css'
 import ButtonB from '../elementos/ButtonB'
+import { useState } from 'react'
 
-function Cards({img, title, description, tech, repo,site, }) {
+function Cards({ img, title, description, tech, repo, site, }) {
+
+    const [info, setInfo] = useState(false)
+
+    function InfoOn() {
+        setInfo(true)
+    }
+
+    function InfoOff() {
+        setInfo(false)
+    }
+
     return (
-        <div  className={Styles.card}>
-            <a target="_blank" href={site}>
-            <img src={img} alt="ErroIMG" />
+        <div onMouseLeave={InfoOff} className={Styles.card}>
+            <a onMouseEnter={InfoOn} target="_blank" href={site}>
+                <img src={img} alt="ErroIMG" />
             </a>
-            <section>
+            {info === true &&(
+                <section>
                 <h3>
                     {title}
                 </h3>
@@ -17,8 +30,9 @@ function Cards({img, title, description, tech, repo,site, }) {
                 <p>
                     {description}
                 </p>
-                <ButtonB id='btnCards' text={'Acesse o repositório'} link={repo}/>
+                <ButtonB id='btnCards' text={'Acesse o repositório'} link={repo} />
             </section>
+            )}
         </div>
 
     )
